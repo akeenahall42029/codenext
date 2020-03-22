@@ -5,21 +5,36 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/albumCover"
+        android:layout_width="166dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="16dp"
         tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/artistName"
+        android:layout_width="109dp"
+        android:layout_height="35dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="16dp"
+        android:text=""
+
+
+        />
+
+    <TextView
+            android:id="@+id/albumName"
+            android:layout_width="112dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="72dp"
+            android:text=""
+            android:layout_gravity="right"
+
+            />
+
+
 </LinearLayout>
