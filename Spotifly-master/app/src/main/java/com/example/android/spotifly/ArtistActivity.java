@@ -14,6 +14,7 @@ public class ArtistActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_artist);
         ArrayList<CategoryItem> artists = new ArrayList<>();
+       //populating arraylist
         artists.add(new CategoryItem("Rihanna", R.drawable.rihanna));
         artists.add(new CategoryItem("Kid Cudi", R.drawable.cudi));
         artists.add(new CategoryItem("Gunna", R.drawable.gunna));

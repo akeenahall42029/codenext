@@ -23,6 +23,7 @@ public class AlbumAdapter extends ArrayAdapter<Album> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         convertView = LayoutInflater.from(getContext()).inflate(R.layout.category_item_album, parent, false);
         Album currentAlbum = getItem(position);
+        return convertView;
 
 
     }
