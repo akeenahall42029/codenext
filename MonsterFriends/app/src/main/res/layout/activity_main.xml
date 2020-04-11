@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#e3fbff">
+
+
+    <ImageButton
+        android:id="@+id/petOneBtn"
+        android:layout_width="149dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="40dp"
+        android:maxWidth="149dp"
+        android:maxHeight="121dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/petTwoBtn"
+        app:layout_constraintTop_toBottomOf="@+id/user_name_pet"
+        tools:srcCompat="@drawable/egg" />
+
+    <ImageButton
+        android:id="@+id/petTwoBtn"
+        android:layout_width="149dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="40dp"
+        android:maxWidth="149dp"
+        android:maxHeight="121dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_name_pet"
+        tools:srcCompat="@drawable/eggy" />
+
+    <ImageButton
+        android:id="@+id/playroomBtn"
+        android:layout_width="233dp"
+        android:layout_height="139dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/petOneBtn"
+        tools:srcCompat="@drawable/playroom" />
+
+    <TextView
+        android:id="@+id/user_name_pet"
+        android:layout_width="246dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
