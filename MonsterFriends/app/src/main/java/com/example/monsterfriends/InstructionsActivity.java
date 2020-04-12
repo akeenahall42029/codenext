@@ -20,6 +20,7 @@ public class InstructionsActivity extends AppCompatActivity {
         instructions = new CountDownTimer(instruction_time,1000) {
             @Override
             public void onTick(long millisUntilFinished) {
+                //testing something for terminal and github
 
                 if(millisUntilFinished <= 10000){
                     user_messages.setText("Welcome to Monster Friends");
