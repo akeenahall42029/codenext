@@ -9,14 +9,15 @@ public class Pets {
 
     //constructor
 
-    public Pets(int hunger, int play, int love,String petName, int petImage) {
+    public Pets(int hunger, int play, int love, String petName, int petImage) {
         this.hunger = hunger;
         this.play = play;
         this.love = love;
-        this.petImage = petImage;
         this.petName = petName;
-
+        this.petImage = petImage;
     }
+
+
     //Getters and setters
 
     public int getHunger() {

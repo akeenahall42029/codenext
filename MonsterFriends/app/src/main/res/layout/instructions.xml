@@ -5,15 +5,15 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".InstructionsActivity"
-    android:background="#ffffff">
+    android:background="#000000">
 
 
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/gifImageView"
         android:layout_width="386dp"
         android:layout_height="114dp"
-        android:layout_marginTop="168dp"
-        android:src="@drawable/heading"
+        android:layout_marginTop="236dp"
+        android:src="@drawable/fivethousand"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,24 +21,42 @@
 
     <TextView
         android:id="@+id/instructions"
-        android:layout_width="188dp"
-        android:layout_height="113dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="112dp"
-        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="200dp"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textColor="#f32192"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gifImageView" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/user_name_input"
-        android:layout_width="273dp"
-        android:layout_height="79dp"
-        android:layout_marginTop="136dp"
-        android:layout_marginEnd="68dp"
+        android:layout_width="288dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="72dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:hint="Enter Your Username: "
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/instructions" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gifImageView" />
+
+    <Button
+        android:id="@+id/user"
+        android:layout_width="104dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="36dp"
+        android:text="Let's Go"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_name_input" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

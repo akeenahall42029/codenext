@@ -13,9 +13,10 @@
         android:layout_width="149dp"
         android:layout_height="121dp"
         android:layout_marginTop="72dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="32dp"
         android:maxWidth="149dp"
         android:maxHeight="121dp"
+        android:onClick="uploadInfo"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toStartOf="@+id/petTwoBtn"
         app:layout_constraintTop_toBottomOf="@+id/user_name_pet"
@@ -32,7 +33,8 @@
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/user_name_pet"
-        tools:srcCompat="@drawable/eggy" />
+        tools:srcCompat="@drawable/eggy"
+        android:onClick="uploadInfo"/>
 
     <ImageButton
         android:id="@+id/playroomBtn"
