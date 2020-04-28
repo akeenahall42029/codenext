@@ -2,6 +2,7 @@ package com.example.birthdaycountdown;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     TextView count_down_text;
     VideoView birthdayVideo;
     GifImageView birthdayChange;
+    MediaPlayer song;
 
 
 
@@ -36,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         MediaController mediaController = new MediaController(this);
         birthdayVideo.setMediaController(mediaController);
         mediaController.setAnchorView(birthdayVideo);
+        song = MediaPlayer.create(MainActivity.this,R.raw.birthdaysong);
 
     }
 
@@ -53,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFinish() {
                 birthdayChange.setImageResource(R.drawable.pearl);
+                song.start();
 
             }
         }.start();
