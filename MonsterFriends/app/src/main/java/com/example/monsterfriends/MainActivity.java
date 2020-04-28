@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     TextView user_name_pet;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,20 +39,29 @@ public class MainActivity extends AppCompatActivity {
         String user_name = userIntent.getStringExtra("userNamePassed");
 
        user_name_pet.setText(user_name+"'s pets!" );
+        //instantiating pets class creating objects
 
-    }
+//         petOne = new Pets(100,100,100,"lilD@ddy",1);
+//         petTwo = new Pets(100,100,100,"b33f c@k3", 2);
+
+//        public void play_button_tings onClick(View view){
+//
+//        }
+//
+//
+  }
 
 
     public void uploadInfo(View view) {
-        Intent petInfo = new Intent(this, Pets.class);
-        startActivity(petInfo);
+        Intent petInfo = new Intent(this, PetsActivity.class);
         if(view.getId() == pet1.getId()){
-
-
+           petInfo.putExtra("petflag",true);
 
         }else{
-            petInfo.putExtra("pet", "kejnrjne");
+            petInfo.putExtra("petflag", false);
+
         }
+        startActivity(petInfo);
 
     }
 }
